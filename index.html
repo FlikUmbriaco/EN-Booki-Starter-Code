@@ -7,6 +7,7 @@
     <title>Booki</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/e556de0bba.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
@@ -16,12 +17,112 @@
 
 <body>
     <div class="main-container">
-        <header></header>
+        <header>
+            <div class="logo">
+                <img src="C:\Users\Mattu\Desktop\Class_Work\Booki\EN-Booki-Starter-Code\images\logo\Booki.png" alt="Booki logo">
+            </div>
+            <div class="menu">
+                <a href="#"><i class="accommodation"></i> Accommodation</a>
+                <a href="#"><i class= "things-to-do"></i> Things To Do</a>
+                <h2><emp>Find a place to stay for your dream vacation</emp></h2>
+                <br>
+                <h3>In the heart of the city or surrounded by nature</h3>
+                <br> 
+                <div class="search-bar">
+                    <input type="text" placeholder="Marseille, France">
+                </div>
+                <div class="filter">
+                    <button type="button"><i class="fa-solid fa-money-bill-wave"></i>Budget</button>
+                    <button type="button"><i class="fa-solid fa-person-dress"></i> Family Friendly</button>
+                    <button type="button"><i class="fa-solid fa-heart"></i> Romantic</button>
+                    <button type="button"><font-awesome-icon :icon="['fas', 'fire']" /> Our Top Picks</button>
+                </div>
+                <div class="info-tab">
+                    <h6><font-awesome-icon :icon="['fas', 'circle-info']"/>There are more than 500 available places to stay in this city</h6>
+                </div>
+        </header>
         <main>
             <div class="accommodation-and-popular">
                 <section class="accommodation">
+                    <!--this is were it went wrong last time-->
+                    <h2><emp>Marseille Accommodation</emp></h2>
+                    <div class="port-card">
+                        <img src="C:\Users\Mattu\Desktop\Class_Work\Booki\EN-Booki-Starter-Code\images\accommodation\fred-kleber.jpg" alt="image of hotel room with two single beds with gray sheets against a white wall">
+                       <h3><emp> The Port Hotel</emp></h3>
+                       Starting at $52/night.
+                       <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+
+                    </div>
+                    <br>
+                    <div class="amina-card">
+                        <img src="C:\Users\Mattu\Desktop\Class_Work\Booki\EN-Booki-Starter-Code\images\accommodation\febrian-zakaria.jpg" alt="image of hotel room with a single bed and matching wooden desk and chair.">
+                       <h3><emp> Amina's Hotel</emp></h3>
+                       Starting at $96/night.
+                       <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+
+                    </div>
+                    <br>
+                    <div class="seagulls-card">
+                        <img src="C:\Users\Mattu\Desktop\Class_Work\Booki\EN-Booki-Starter-Code\images\accommodation\fred-kleber.jpg" alt="image of hotel room with two single beds with gray sheets against a white wall">
+                       <h3><emp> Seagulls Hotel</emp></h3>
+                       Starting at $76/night.
+                       <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+
+                    </div>
+                    <br>
+
+                    <div class="sea-card">
+                        <img src="C:\Users\Mattu\Desktop\Class_Work\Booki\EN-Booki-Starter-Code\images\accommodation\annie-spratt.jpg" alt="image of hotel room with white sheets, blue pillows, and a painting of the ocean">
+                       <h3><emp> Hotel of the Sea</emp></h3>
+                       Starting at $46/night.
+                       <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+
+                    </div>
+                    <br>
+                    
+                    <div class="canebiere-card">
+                        <img src="C:\Users\Mattu\Desktop\Class_Work\Booki\EN-Booki-Starter-Code\images\accommodation\marcus-loke.jpg" alt="image of hotel room with a bunk bed and window overlooking a city">
+                       <h3><emp>La Canebiere Inn </emp></h3>
+                       Starting at $25/night.
+                       <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+
+                    </div>
+                    <br>
+
+                    <div class="basket-card">
+                        <img src="C:\Users\Mattu\Desktop\Class_Work\Booki\EN-Booki-Starter-Code\images\accommodation\nicate-lee.jpg" alt="image of hotel room with a lofted bed and hard wood furniture">
+                       <h3><emp>The Basket Inn Inn </emp></h3>
+                       Starting at $23/night.
+                       <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+
+                    </div>
+                    <br>
+
+                    <h3>Show more</h3>
 
                 </section>
+
+                <section class="things-to-do">
+                    <div class="eiffel-tower">
+                        <img src="C:\Users\Mattu\Desktop\Class_Work\Booki\EN-Booki-Starter-Code\images\activites\Eiffel Tower.jpg">
+                        <h4>The Eiffel Tower</h4>
+                    </div>
+                    <br>
+                    <div class="louvre">
+                        <img src="C:\Users\Mattu\Desktop\Class_Work\Booki\EN-Booki-Starter-Code\images\activites\Louvre.jpg">
+                        <h4>The Louvre</h4>
+                    </div>
+                    <br>
+                    <div class="montmartre">
+                        <img src="C:\Users\Mattu\Desktop\Class_Work\Booki\EN-Booki-Starter-Code\images\activites\Montmartre.jpg">
+                        <h4>Montmartre</h4>
+                    </div>
+                    <br>
+                    <div class="notre-dame">
+                        <img src="C:\Users\Mattu\Desktop\Class_Work\Booki\EN-Booki-Starter-Code\images\activites\Notre dame.jpg">
+                        <h4>Notre Dame</h4>
+                        </div>
+
                 <section class="popular">
                     <div class="popular-title">
                         <h2 class="section-title">Most popular</h2>
